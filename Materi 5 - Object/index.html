@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let siswa={
+            name:"Adit P",
+            class:12,
+            school:"SMK Negeri 1 SUBANG",
+            'no home':33
+        };
+        console.log(siswa);
+
+        // the dot(.) notation
+        console.log(siswa.class);
+        // console.log(siswa.no rumah);
+
+        // array like notation
+        console.log(siswa['name']);
+        console.log(siswa['school']);
+        console.log(siswa['no home']);
+
+        // merubah value property object
+        siswa.name="Alian R";
+        console.log(siswa.name);
+
+        // menambah properties object
+        siswa.nis=1278890;
+        console.log(siswa.nis);
+
+        // men delete property
+        delete siswa.nis;
+        console.log(siswa.nis);
+
+        // check property 
+        console.log('name' in siswa);
+        console.log('nis' in siswa);
+
+    </script>
+
+</body>
+</html>

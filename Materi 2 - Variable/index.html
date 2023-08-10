@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable JS</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        // deklarasi variable : var, let, const
+        var nama;
+
+        // trend penulisan : camelCase 
+        var myName;
+        var myData;
+
+        // inisialisasi variable : mendeklarasikan variable dengan value nya
+        var name="Adit Praditia";
+        var umur=17;
+
+        // ganti value variable
+        umur=18;
+        // console.log(umur);
+
+        // erorr variable
+        /* 
+            console.log(nama); // undefined : value variable belum terisi
+            console.log(data); // Uncaught ReferenceError: data is not defined > variable belum di deklarasi 
+        */
+
+        // var
+        var handphone="POCO";
+        console.log(handphone);
+        var handphone="VIVO";
+        console.log(handphone);
+
+        console.log(handphone); // maka value akan ter override
+
+        // let
+        let brand="REXUS";
+        console.log(brand);
+        /*
+        let brand="FANTECH"; // redeclaration of let brand note: Previously declared at line 45, column 12 
+        */
+        brand="FANTECH"; // cara mengganti value let
+        console.log(brand);
+
+        // const : readonly
+        const merk="LENOVO"; 
+        // merk="LENOVO"; // invalid assignment to const 'merk'
+        console.log(merk);
+
+    </script>
+
+</body>
+</html>
